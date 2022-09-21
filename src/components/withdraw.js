@@ -1,3 +1,7 @@
+const withdraw = document.getElementById('withdraw'),
+    withdrawInput = document.getElementById('withdraw-input'),
+    withdrawBtn = document.getElementById('withdraw-btn');
+
 withdrawBtn.addEventListener('click', () => {
     const value = withdrawInput.value;
     if (Number(value) === 0) {

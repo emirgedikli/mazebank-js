@@ -1,41 +1,40 @@
-const loginArea = document.getElementById('login-area'),
-    dashboard = document.getElementById('dashboard'),
-    deposit = document.getElementById('deposit'),
-    withdraw = document.getElementById('withdraw'),
-    balance = document.getElementById('balance'),
-    depositInput = document.getElementById('deposit-input'),
-    withdrawInput = document.getElementById('withdraw-input'),
-    depositBtn = document.getElementById('deposit-btn'),
-    withdrawBtn = document.getElementById('withdraw-btn'),
-    submitBtn = document.getElementById('submit-btn');
+//deposit button event handler
+const deposit_btn = document.getElementById("deposit-btn");
+deposit_btn.addEventListener("click", function () {
+  const depositStringToInt = getInputNumb("deposit-amount");
 
+  updateSpanTest("current-deposit", depositStringToInt);
+  updateSpanTest("current-balance", depositStringToInt);
 
-submitBtn.addEventListener('click', () => {
-    loginArea.style.display = 'none';
-    dashboard.classList.remove('d-none');
-})
+  //setting up the input field blank when clicked
+  document.getElementById("deposit-amount").value = "";
+});
 
-depositBtn.addEventListener('click', () => {
-    const value = depositInput.value;
-    const depositValue = Number(deposit.innerText) + Number(value);
-    const balanceValue = Number(balance.innerText) + Number(value);
-    deposit.innerText = depositValue;
-    balance.innerText = balanceValue;
-    depositInput.value = '';
-})
+//withdraw button event handler
+const withdraw_btn = document.getElementById("withdraw-btn");
+withdraw_btn.addEventListener("click", function () {
+  const withdrawNumb = getInputNumb("withdraw-amount");
 
+  updateSpanTest("current-withdraw", withdrawNumb);
+  updateSpanTest("current-balance", -1 * withdrawNumb);
+  //setting up the input field blank when clicked
+  document.getElementById("withdraw-amount").value = "";
+});
 
-withdrawBtn.addEventListener('click', () => {
-    const value = withdrawInput.value;
-    if (Number(value) === 0) {
-        alert("You don't have any balance to withdraw");
-    } else if (Number(value) > Number(balance.innerText)) {
-        alert("You don't have that much balance to withdraw");
-    } else {
-        const balanceValue = Number(balance.innerText) - Number(value);
-        const withdrawValue = Number(withdraw.innerText) + Number(value);
-        withdraw.innerText = withdrawValue;
-        balance.innerText = balanceValue;
-        withdrawInput.value = '';
-    }
-})
+//function to parse string input to int
+function getInputNumb(idName) {
+  const amount = document.getElementById(idName).value;
+  const amountNumber = parseFloat(amount);
+  return amountNumber;
+}
+
+function updateSpanTest(idName, addedNumber) {
+  //x1.1 updating balance the same way
+  const current = document.getElementById(idName).innerText;
+  const currentStringToInt = parseFloat(current);
+
+  const total = currentStringToInt + addedNumber;
+
+  //x1.2 setting this value in balance
+  document.getElementById(idName).innerText = total;
+}

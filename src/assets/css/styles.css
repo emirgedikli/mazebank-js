@@ -8,3 +8,7 @@
   font-weight: 600;
   font-style: normal;
 }
+
+.bg-mazebank {
+  background-image: "../img/bg-mazebank.png";
+}

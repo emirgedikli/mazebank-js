@@ -4,54 +4,70 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../assets/css/output.css" />
-    <title>MazeBank</title>
+    <title>MAZEBANK</title>
   </head>
-  <body class="bg-mazebank">
-    <!-- loginpage -->
-    <main id="login-area">
-      <h1>Welcome to Maze Bank</h1>
-      <div id="login-box">
-        <h3>Login</h3>
-        <input type="text" placeholder="email" />
-        <br />
-        <input type="text" placeholder="password" />
-        <br />
-        <button id="submit-btn">Submit</button>
+  <body class="m-0 p-28 bg-mazebank">
+    <div>
+      <h1 class="text-center">Welcome to MAZEBANK</h1>
+    </div>
+    <!-- deposit -->
+    <div id="account-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mb-3">
+            <div class="deposit status">
+              <h5>Deposit</h5>
+              <h2>$ <span id="current-deposit">0</span></h2>
+            </div>
+          </div>
+          <!-- withdraw -->
+          <div class="col-lg-4 mb-3">
+            <div class="withdraw status">
+              <h5>Withdraw</h5>
+              <h2>$ <span id="current-withdraw">0</span></h2>
+            </div>
+          </div>
+          <!-- balance -->
+          <div class="col-lg-4 mb-3">
+            <div class="balance status">
+              <h5>Balance</h5>
+              <h2>$ <span id="current-balance">2000</span></h2>
+            </div>
+          </div>
+        </div>
       </div>
-    </main>
-    <!-- homepage -->
-    <main>
-      <!-- results -->
-      <section>
-        <div>
-          <h2>Deposit</h2>
-          <p>$ <span id="deposit">0</span></p>
+      <!-- deposit amount -->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="submit-area">
+              <h4>Deposit Amount</h4>
+              <input
+                id="deposit-amount"
+                type="text"
+                class="form-control"
+                placeholder="Enter deposit amount"
+              /><br />
+              <button id="deposit-btn" class="btn btn-success">Deposit</button>
+            </div>
+          </div>
+          <!-- withdraw amount -->
+          <div class="col-lg-6">
+            <div class="submit-area">
+              <h4>Withdraw Amount</h4>
+              <input
+                id="withdraw-amount"
+                type="text"
+                class="form-control"
+                placeholder="Enter withdraw amount"
+              /><br />
+              <button id="withdraw-btn" class="btn btn-success">
+                Withdraw
+              </button>
+            </div>
+          </div>
         </div>
-        <div>
-          <h2>Withdraw</h2>
-          <p>$ <span id="withdraw">0</span></p>
-        </div>
-        <div>
-          <h2>Balance</h2>
-          <p>$ <span id="balance">2000</span></p>
-        </div>
-      </section>
-      <!-- buttons -->
-      <section id="input-section">
-        <div>
-          <h3>Deposit</h3>
-          <input type="number" id="deposit-input" placeholder="Deposit" />
-          <br />
-          <button id="deposit-btn">Deposit</button>
-        </div>
-        <div>
-          <h3>Withdraw</h3>
-          <input type="number" id="withdraw-input" placeholder="Withdraw" />
-          <br />
-          <button id="withdraw-btn">Withdraw</button>
-        </div>
-      </section>
-    </main>
+      </div>
+    </div>
   </body>
 </html>

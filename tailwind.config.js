@@ -5,6 +5,13 @@ const colors = require("tailwindcss/colors");
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
+    theme: {
+      extend: {
+        backgroundImage: {
+          "bg-mazebank": "url('/img/bg-mazebank.png')",
+        },
+      },
+    },
     colors: {
       custom1: "#78dcca",
       customBlack: {
@@ -15,10 +22,9 @@ module.exports = {
       customGreen: {
         greenlight: "#6BAE8A",
       },
-      white: colors.white,
+      ...colors,
     },
     extend: {},
   },
   plugins: [],
 };
-

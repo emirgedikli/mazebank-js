@@ -9,47 +9,55 @@
     <title>MAZEBANK</title>
   </head>
   <body
-    class="m-0 p-28"
+    class="lg:m-0 lg:p-28 m-0 p-20"
     style="background-image: url(../../assets/img/bgmazebank.png)"
   >
-    <main style="background-color: beige" class="p-12">
-      <div data-aos="zoom-in" class="flex justify-center pr-36">
+    <main style="background-color: beige" class="lg:p-12 p-20">
+      <div data-aos="zoom-in" class="flex justify-center pr-20 lg:flex lg:justify-center lg:pr-36">
         <img src="../../assets/img/logomazebank.png" alt="logo" />
-        <h1 class="text-center uppercase font-bold text-6xl pt-40">
+        <h1
+          class="text-center uppercase font-bold text-3xl pt-20 lg:text-center lg:uppercase lg:font-bold lg:text-6xl lg:pt-40"
+        >
           maze bank
         </h1>
       </div>
       <!-- deposit -->
-      <div id="account-area" class="m-3.5">
-        <div class="container">
+      <div id="account-area" class="lg:m-3.5 m-3.5">
+        <div>
           <div
-            class="row flex justify-around mt-12"
+            class="flex justify-around mt-8 lg:flex lg:justify-around lg:mt-12"
             data-aos="fade-right"
             data-aos-offset="300"
             data-aos-easing="ease-in-sine"
           >
-            <div class="col-lg-4 mb-3 m-0">
-              <div class="deposit m-5 p-5 text-white bg-slate-600 rounded-xl">
-                <h5 class="text-xl p-4">Deposit</h5>
-                <h2 class="text-center">
+            <div class="mb-3 m-0 lg:mb-3 lg:m-0">
+              <div
+                class="m-5 p-5 text-white bg-slate-600 rounded-xl lg:m-5 lg:p-5 lg:text-white lg:bg-slate-600 lg:rounded-xl"
+              >
+                <h5 class="text-sm p-2 lg:text-xl lg:p-4">Deposit</h5>
+                <h2 class="text-center lg:text-center">
                   $ <span id="current-deposit">0</span>
                 </h2>
               </div>
             </div>
             <!-- withdraw -->
-            <div class="col-lg-4 mb-3 m-0">
-              <div class="withdraw m-5 p-5 text-white bg-slate-600 rounded-xl">
-                <h5 class="text-xl p-4">Withdraw</h5>
-                <h2 class="text-center">
+            <div class="mb-3 m-0 lg:mb-3 lg:m-0">
+              <div
+                class="m-5 p-5 text-white bg-slate-600 rounded-xl lg:m-5 lg:p-5 lg:text-white lg:bg-slate-600 lg:rounded-xl"
+              >
+                <h5 class="text-sm p-2 lg:text-xl lg:p-4">Withdraw</h5>
+                <h2 class="text-center lg:text-center">
                   $ <span id="current-withdraw">0</span>
                 </h2>
               </div>
             </div>
             <!-- balance -->
-            <div class="col-lg-4 mb-3 m-0">
-              <div class="balance m-5 p-5 text-white bg-slate-600 rounded-xl">
-                <h5 class="text-xl p-4">Balance</h5>
-                <h2 class="text-center">
+            <div class="lg:mb-3 lg:m-0">
+              <div
+                class="m-5 p-5 text-white bg-slate-600 rounded-xl lg:m-5 lg:p-5 lg:text-white lg:bg-slate-600 lg:rounded-xl"
+              >
+                <h5 class="text-sm p-2 lg:text-xl lg:p-4">Balance</h5>
+                <h2 class="text-center lg:text-center">
                   $ <span id="current-balance">2000</span>
                 </h2>
               </div>
@@ -62,18 +70,18 @@
             <div>
               <div
                 data-aos="fade-left"
-                class="p-8 mt-12 none bg-red-600 flex justify-around shadow rounded-xl"
+                class="p-4 mt-8 bg-red-600 flex flex-col shadow rounded-xl lg:p-8 lg:mt-12 lg:bg-red-600 lg:flex lg:flex-row lg:justify-around lg:shadow lg:rounded-xl"
               >
-                <h4 class="text-white text-xl pt-2">Deposit Amount</h4>
+                <h4 class="text-white text-sm py-2 lg:text-white lg:text-xl lg:pt-2">Deposit Amount</h4>
                 <input
                   id="deposit-amount"
                   type="text"
-                  class="p-2 rounded-xl"
+                  class="p-2 rounded-sm lg:p-2 lg:rounded-xl"
                   placeholder="Enter deposit amount"
                 /><br />
                 <button
                   id="deposit-btn"
-                  class="block uppercase shadow bg-slate-600 hover:bg-slate-900 focus:shadow-outline focus:outline-none text-white text-xs py-3 px-10 rounded"
+                  class="uppercase shadow bg-slate-600 hover:bg-slate-900 focus:shadow-outline focus:outline-none text-white text-sm py-3 px-10 rounded-xl lg:uppercase lg:shadow lg:bg-slate-600 lg:hover:bg-slate-900 lg:focus:shadow-outline lg:focus:outline-none lg:text-white lg:text-xl lg:py-3 lg:px-10 lg:rounded"
                 >
                   send
                 </button>
@@ -83,18 +91,18 @@
             <div>
               <div
                 data-aos="fade-right"
-                class="p-8 mt-12 none bg-red-600 flex justify-around shadow rounded-xl"
+                class="p-4 mt-8 bg-red-600 flex flex-col shadow rounded-xl lg:p-8 lg:mt-12 lg:none lg:bg-red-600 lg:flex lg:justify-around lg:shadow lg:rounded-xl"
               >
-                <h4 class="text-white text-xl pt-2">Withdraw Amount</h4>
+                <h4 class="text-white text-sm py-2">Withdraw Amount</h4>
                 <input
                   id="withdraw-amount"
                   type="text"
-                  class="p-2 rounded-xl"
+                  class="p-2 rounded-sm lg:p-2 lg:rounded-xl"
                   placeholder="Enter withdraw amount"
                 /><br />
                 <button
                   id="withdraw-btn"
-                  class="block uppercase shadow bg-slate-600 hover:bg-slate-900 focus:shadow-outline focus:outline-none text-white text-xs py-3 px-10 rounded"
+                  class="uppercase shadow bg-slate-600 hover:bg-slate-900 focus:shadow-outline focus:outline-none text-white text-sm py-3 px-10 rounded-xl lg:uppercase lg:shadow lg:bg-slate-600 lg:hover:bg-slate-900 lg:focus:shadow-outline lg:focus:outline-none lg:text-white lg:text-xs lg:py-3 lg:px-10 lg:rounded"
                 >
                   send
                 </button>
@@ -104,46 +112,46 @@
         </div>
       </div>
       <!-- transfer -->
-      <section class="flex justify-center pt-12">
+      <section class="flex justify-center pt-12 lg:flex lg:justify-center lg:pt-12">
         <!-- make a transfer -->
         <div data-aos="flip-up">
-          <div class="max-w-2xl">
+          <div class="max-w-2xl lg:max-w-2xl">
             <label
               for="countries"
-              class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400 uppercase"
+              class="mb-2 font-medium text-gray-900 dark:text-gray-400 text-base uppercase lg:mb-2 lg:font-medium lg:text-gray-900 lg:dark:text-gray-400 lg:text-base lg:uppercase"
               >make a transfer</label
             >
           </div>
           <!-- add a beneficiary -->
-          <div class="pt-2">
-            <div class="max-w-2xl">
+          <div class="pt-2 lg:pt-2">
+            <div class="max-w-2xl lg:max-w-2xl">
               <input
                 type="text"
                 id="input-withdrawsold"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 lg:bg-gray-50 lg:border lg:border-gray-300 lg:text-gray-900 lg:text-sm lg:rounded-lg lg:focus:ring-blue-500 lg:focus:border-blue-500 lg:block lg:w-full lg:p-2.5 lg:dark:bg-gray-700 lg:dark:border-gray-600 lg:dark:placeholder-gray-400 lg:dark:text-white lg:dark:focus:ring-blue-500 lg:dark:focus:border-blue-500"
                 placeholder="add a beneficiary"
               />
               <label for="input-withdrawsold">
                 <button
                   id="withdraw-btn"
-                  class="block uppercase shadow bg-slate-600 hover:bg-slate-900 focus:shadow-outline focus:outline-none text-white text-xs py-3 px-10 rounded"
+                  class="uppercase shadow bg-slate-600 hover:bg-slate-900 focus:shadow-outline focus:outline-none text-white text-xs mt-2 py-3 px-10 rounded lg:uppercase lg:shadow lg:bg-slate-600 lg:hover:bg-slate-900 lg:focus:shadow-outline lg:focus:outline-none lg:text-white lg:text-xs lg:py-3 lg:px-10 lg:rounded"
                 >
                   add
-                </button></label
-              >
+                </button>
+              </label>
             </div>
           </div>
           <!-- chose a beneficiary -->
-          <div class="pt-2">
+          <div class="pt-2 lg:pt-2">
             <select
               id="countries"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              class="bg-gray-50 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 lg:bg-gray-50 lg:border-gray-300 lg:text-gray-900 lg:text-sm lg:rounded-lg lg:focus:ring-blue-500 lg:focus:border-blue-500 block lg:w-full lg:p-2.5 lg:dark:bg-gray-700 lg:dark:border-gray-600 lg:dark:placeholder-gray-400 lg:dark:text-white lg:dark:focus:ring-blue-500 lg:dark:focus:border-blue-500"
             >
               <option selected>chose a beneficiary</option>
             </select>
             <button
               id="withdraw-btn"
-              class="block uppercase shadow bg-slate-600 hover:bg-slate-900 focus:shadow-outline focus:outline-none text-white text-xs py-3 px-10 rounded"
+              class="uppercase shadow bg-slate-600 hover:bg-slate-900 focus:shadow-outline focus:outline-none text-white text-xs mt-2 py-3 px-10 rounded lg:uppercase lg:shadow lg:bg-slate-600 lg:hover:bg-slate-900 lg:focus:shadow-outline lg:focus:outline-none lg:text-white lg:text-xs lg:py-3 lg:px-10 lg:rounded"
             >
               confirm
             </button>
@@ -151,22 +159,39 @@
         </div>
       </section>
     </main>
-    <footer class="w-full h-20 bg-black text-white">
-      <div class="flex flex-col justify-center items-center h-full">
-        <span class="italic">Copyright</span>
-        <div class="pt-4">
+    <footer class="w-full h-20 bg-black text-white lg:w-full lg:h-20 lg:bg-black lg:text-white">
+      <div
+        class="flex flex-col justify-center items-center h-full lg:flex lg:flex-col lg:justify-center lg:items-center lg:h-full"
+      >
+        <span class="italic lg:italic">Copyright ©</span>
+        <div class="pt-4 lg:pt-4">
           <span>
-            <a href="#" target="_blank" rel="noreferrer noopener" class="text-white decoration-none">
+            <a
+              href="#"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="text-white decoration-none lg:text-white lg:decoration-none"
+            >
               <i class="fa-solid fa-link"></i>
             </a>
           </span>
-          <span class="px-4">
-            <a href="https://github.com/emirgedikli" target="_blank" rel="noreferrer noopener" class="text-white decoration-none">
+          <span class="lg:px-4">
+            <a
+              href="https://github.com/emirgedikli"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="text-white decoration-none lg:text-white lg:decoration-none"
+            >
               <i class="fa-brands fa-github"></i>
             </a>
           </span>
           <span>
-            <a href="https://www.linkedin.com/in/emirgedikli" target="_blank" rel="noreferrer noopener" class="text-white decoration-none">
+            <a
+              href="https://www.linkedin.com/in/emirgedikli"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="text-white decoration-none lg:text-white lg:decoration-none"
+            >
               <i class="fa-brands fa-linkedin"></i>
             </a>
           </span>

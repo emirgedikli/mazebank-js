@@ -9,23 +9,26 @@
     <title>MAZEBANK</title>
   </head>
   <body
-    class="lg:m-0 lg:p-28 m-0 p-20"
+    class="m-0 p-8 lg:m-0 lg:p-28"
     style="background-image: url(../../assets/img/bgmazebank.png)"
   >
     <main style="background-color: beige" class="lg:p-12 p-20">
-      <div data-aos="zoom-in" class="flex justify-center pr-20 lg:flex lg:justify-center lg:pr-36">
+      <div
+        data-aos="zoom-in"
+        class="flex justify-center pr-8 lg:flex lg:justify-center lg:pr-36"
+      >
         <img src="../../assets/img/logomazebank.png" alt="logo" />
         <h1
-          class="text-center uppercase font-bold text-3xl pt-20 lg:text-center lg:uppercase lg:font-bold lg:text-6xl lg:pt-40"
+          class="text-center uppercase font-bold text-3xl pt-12 lg:text-center lg:uppercase lg:font-bold lg:text-6xl lg:pt-40"
         >
           maze bank
         </h1>
       </div>
       <!-- deposit -->
-      <div id="account-area" class="lg:m-3.5 m-3.5">
+      <div id="account-area" class="m-3.5 lg:m-3.5">
         <div>
           <div
-            class="flex justify-around mt-8 lg:flex lg:justify-around lg:mt-12"
+            class="grid mt-8 lg:flex lg:justify-around lg:mt-12"
             data-aos="fade-right"
             data-aos-offset="300"
             data-aos-easing="ease-in-sine"
@@ -72,7 +75,11 @@
                 data-aos="fade-left"
                 class="p-4 mt-8 bg-red-600 flex flex-col shadow rounded-xl lg:p-8 lg:mt-12 lg:bg-red-600 lg:flex lg:flex-row lg:justify-around lg:shadow lg:rounded-xl"
               >
-                <h4 class="text-white text-sm py-2 lg:text-white lg:text-xl lg:pt-2">Deposit Amount</h4>
+                <h4
+                  class="text-white text-sm py-2 lg:text-white lg:text-xl lg:pt-2"
+                >
+                  Deposit Amount
+                </h4>
                 <input
                   id="deposit-amount"
                   type="text"
@@ -89,35 +96,39 @@
             </div>
             <!-- withdraw amount -->
             <div>
-              <div
-                data-aos="fade-right"
-                class="p-4 mt-8 bg-red-600 flex flex-col shadow rounded-xl lg:p-8 lg:mt-12 lg:none lg:bg-red-600 lg:flex lg:justify-around lg:shadow lg:rounded-xl"
-              >
-                <h4 class="text-white text-sm py-2">Withdraw Amount</h4>
-                <input
-                  id="withdraw-amount"
-                  type="text"
-                  class="p-2 rounded-sm lg:p-2 lg:rounded-xl"
-                  placeholder="Enter withdraw amount"
-                /><br />
-                <button
-                  id="withdraw-btn"
-                  class="uppercase shadow bg-slate-600 hover:bg-slate-900 focus:shadow-outline focus:outline-none text-white text-sm py-3 px-10 rounded-xl lg:uppercase lg:shadow lg:bg-slate-600 lg:hover:bg-slate-900 lg:focus:shadow-outline lg:focus:outline-none lg:text-white lg:text-xs lg:py-3 lg:px-10 lg:rounded"
-                >
-                  send
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+              <div>
+                <div>
+                  <div
+                    data-aos="fade-left"
+                    class="p-4 mt-8 bg-red-600 flex flex-col shadow rounded-xl lg:p-8 lg:mt-12 lg:bg-red-600 lg:flex lg:flex-row lg:justify-around lg:shadow lg:rounded-xl"
+                  >
+                    <h4
+                      class="text-white text-sm py-2 lg:text-white lg:text-xl lg:pt-2"
+                    >
+                    Withdraw Amount
+                    </h4>
+                    <input
+                      id="withdraw-amount"
+                      type="text"
+                      class="p-2 rounded-sm lg:p-2 lg:rounded-xl"
+                      placeholder="Enter deposit amount"
+                    /><br />
+                    <button
+                      id="withdraw-btn"
+                      class="uppercase shadow bg-slate-600 hover:bg-slate-900 focus:shadow-outline focus:outline-none text-white text-sm py-3 px-10 rounded-xl lg:uppercase lg:shadow lg:bg-slate-600 lg:hover:bg-slate-900 lg:focus:shadow-outline lg:focus:outline-none lg:text-white lg:text-xl lg:py-3 lg:px-10 lg:rounded"
+                    >
+                      send
+                    </button>
+                  </div>
+                </div>
       <!-- transfer -->
-      <section class="flex justify-center pt-12 lg:flex lg:justify-center lg:pt-12">
+      <section
+        class="flex justify-center pt-12 lg:flex lg:justify-center lg:pt-12"
+      >
         <!-- make a transfer -->
         <div data-aos="flip-up">
           <div class="max-w-2xl lg:max-w-2xl">
             <label
-              for="countries"
               class="mb-2 font-medium text-gray-900 dark:text-gray-400 text-base uppercase lg:mb-2 lg:font-medium lg:text-gray-900 lg:dark:text-gray-400 lg:text-base lg:uppercase"
               >make a transfer</label
             >
@@ -144,7 +155,6 @@
           <!-- chose a beneficiary -->
           <div class="pt-2 lg:pt-2">
             <select
-              id="countries"
               class="bg-gray-50 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 lg:bg-gray-50 lg:border-gray-300 lg:text-gray-900 lg:text-sm lg:rounded-lg lg:focus:ring-blue-500 lg:focus:border-blue-500 block lg:w-full lg:p-2.5 lg:dark:bg-gray-700 lg:dark:border-gray-600 lg:dark:placeholder-gray-400 lg:dark:text-white lg:dark:focus:ring-blue-500 lg:dark:focus:border-blue-500"
             >
               <option selected>chose a beneficiary</option>
@@ -159,7 +169,9 @@
         </div>
       </section>
     </main>
-    <footer class="w-full h-20 bg-black text-white lg:w-full lg:h-20 lg:bg-black lg:text-white">
+    <footer
+      class="w-full h-20 bg-black text-white lg:w-full lg:h-20 lg:bg-black lg:text-white"
+    >
       <div
         class="flex flex-col justify-center items-center h-full lg:flex lg:flex-col lg:justify-center lg:items-center lg:h-full"
       >

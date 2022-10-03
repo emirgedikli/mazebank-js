@@ -7,6 +7,9 @@ module.exports = {
   theme: {
     theme: {
       extend: {
+        colors: {
+          'logo-grey': '#2d3034'
+        }
       },
       colors: {
         ...colors,

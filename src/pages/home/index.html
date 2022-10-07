@@ -129,12 +129,13 @@
             <div class="max-w-2xl lg:max-w-2xl">
               <input
                 type="text"
-                id="input-withdrawsold"
+                id="input-withdrawsold2"
                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 lg:bg-gray-50 lg:border lg:border-gray-300 lg:text-gray-900 lg:text-sm lg:rounded-lg lg:focus:ring-blue-500 lg:focus:border-blue-500 lg:block lg:w-full lg:p-2.5 lg:dark:bg-gray-700 lg:dark:border-gray-600 lg:dark:placeholder-gray-400 lg:dark:text-white lg:dark:focus:ring-blue-500 lg:dark:focus:border-blue-500"
                 placeholder="add a beneficiary"
               />
               <label for="input-withdrawsold">
-                <button id="withdraw-btn" class="px-4 py-2 bg-gray-900 outline-none rounded text-white shadow-lg font-medium active:shadow-none active:scale-95 hover:bg-gray-600 focus:bg-gray-400 focus:ring-2 focus:ring-gray-200 focus:ring-offset-2 disabled:bg-gray-400/80 disabled:shadow-none disabled:cursor-not-allowed transition-colors duration-200">Add</button>
+                <!-- button add -->
+                <button id="withdraw-btn2" class="px-4 py-2 bg-gray-900 outline-none rounded text-white shadow-lg font-medium active:shadow-none active:scale-95 hover:bg-gray-600 focus:bg-gray-400 focus:ring-2 focus:ring-gray-200 focus:ring-offset-2 disabled:bg-gray-400/80 disabled:shadow-none disabled:cursor-not-allowed transition-colors duration-200">Add</button>
               </label>
             </div>
           </div>
@@ -144,7 +145,9 @@
               class="bg-gray-50 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 lg:bg-gray-50 lg:border-gray-300 lg:text-gray-900 lg:text-sm lg:rounded-lg lg:focus:ring-blue-500 lg:focus:border-blue-500 block lg:w-full lg:p-2.5 lg:dark:bg-gray-700 lg:dark:border-gray-600 lg:dark:placeholder-gray-400 lg:dark:text-white lg:dark:focus:ring-blue-500 lg:dark:focus:border-blue-500"
             >
               <option selected>chose a beneficiary</option>
+              <option id="beneficary-option"></option>
             </select>
+            <!-- button confirm -->
             <button id="withdraw-btn" class="px-4 py-2 bg-gray-900 outline-none rounded text-white shadow-lg font-medium active:shadow-none active:scale-95 hover:bg-gray-600 focus:bg-gray-400 focus:ring-2 focus:ring-gray-200 focus:ring-offset-2 disabled:bg-gray-400/80 disabled:shadow-none disabled:cursor-not-allowed transition-colors duration-200">Confirm</button>
           </div>
         </div>

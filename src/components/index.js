@@ -38,3 +38,13 @@ function updateSpanTest(idName, addedNumber) {
   //x1.2 setting this value in balance
   document.getElementById(idName).innerText = total;
 }
+
+// make a transfer
+
+  const inputWithdrawSold = document.getElementById("input-withdrawsold")
+  const withdrawBtn2 = document.getElementById("withdraw-btn2")
+  const beneficaryOption = document.getElementById("beneficary-option")
+  console.log(inputWithdrawSold);
+  withdrawBtn2.addEventListener("click", () => {
+    beneficaryOption.textContent = inputWithdrawSold.value
+  })

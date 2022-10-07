@@ -41,10 +41,10 @@ function updateSpanTest(idName, addedNumber) {
 
 // make a transfer
 
-  const inputWithdrawSold = document.getElementById("input-withdrawsold")
+  const inputWithdrawSold2 = document.getElementById("input-withdrawsold2")
   const withdrawBtn2 = document.getElementById("withdraw-btn2")
   const beneficaryOption = document.getElementById("beneficary-option")
-  console.log(inputWithdrawSold);
   withdrawBtn2.addEventListener("click", () => {
-    beneficaryOption.textContent = inputWithdrawSold.value
+    console.log(inputWithdrawSold2.value);
+    beneficaryOption.textContent = inputWithdrawSold2.value
   })
